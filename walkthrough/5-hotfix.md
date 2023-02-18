@@ -10,16 +10,16 @@ This morning the project manager received a frantic call from the EIC of _Flavor
 
 Start by looking at the diagram from the GitFlow article and find the hotfix. 
 
-Follow along with the activities below to walk through the process of creating a hotfix branch, then merging the hotfix into both the `master` and `develop` branches.
+Follow along with the activities below to walk through the process of creating a hotfix branch, then merging the hotfix into both the `main` and `develop` branches.
 
 ### 1 - Create the Hotfix Branch
 
 __One Team Member__
 
-Create a branch off of `master` named `hotfix-1.0.1`:
+Create a branch off of `main` named `hotfix-1.0.1`:
 ```sh
-$ git checkout master
-# switch to master branch
+$ git checkout main
+# switch to main branch
 
 $ git checkout -b hotfix-1.0.1
 # create & switch to hotfix branch
@@ -56,16 +56,16 @@ Push the branch to origin (Github):
 $ git push origin hotfix-1.0.1
 ```
 
-Navigate to your GitHub fork and open the pull request. On the Pull Request interface, make sure that the base fork is `your-username\git-flow-exercise` and the base branch is `master`. This means that you are requesting to merge your changes into the `master` branch of your forked copy of the repository. 
+Navigate to your GitHub fork and open the pull request. On the Pull Request interface, make sure that the base fork is `your-username\git-flow-exercise` and the base branch is `main`. This means that you are requesting to merge your changes into the `main` branch of your forked copy of the repository. 
 
 We also want to merge the hotfix changes into `develop`, so create a second Pull Request making sure that the base fork is `your-username\git-flow-exercise` and the base branch is `develop`. 
 
 
 ### 5 - Accept Pull Requests
 
-Open each Pull Request in the Github interface and click the green "Merge pull request" button. Once the hotfix is merged into `master` we can assume that the app is updated and the issue of writers receiving too much email is resolved.
+Open each Pull Request in the Github interface and click the green "Merge pull request" button. Once the hotfix is merged into `main` we can assume that the app is updated and the issue of writers receiving too much email is resolved.
 
-Fetch the latest changes in master and develop branches to your local device, like you did in [4. Fetching Latest](4-fetching-latest.md).
+Fetch the latest changes in main and develop branches to your local device, like you did in [4. Fetching Latest](4-fetching-latest.md).
 
 
 ## Next

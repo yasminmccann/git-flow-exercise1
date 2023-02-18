@@ -38,13 +38,13 @@ View existing branches:
 ```sh
 $ git branch
 # show local branches
-* master
+* main
 
 $ git branch -r
 # show remote branches
-origin/HEAD -> origin/master
+origin/HEAD -> origin/main
 origin/develop
-origin/master
+origin/main
 ```
 
 
@@ -55,7 +55,7 @@ __All Team Members__
 By now you should have noticed that you do not have a local `develop` branch
 ```sh
 $ git branch
-* master
+* main
 ```
 
 Checkout the `develop` branch to get a local copy:
